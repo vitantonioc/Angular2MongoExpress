@@ -1,0 +1,109 @@
+  .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .heroes .text {
+    position: relative;
+    top: -3px;
+  }
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.0em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: 0px;
+    top: -4px;
+    height: 25px;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    padding-top: 6px;
+  }
+  .span.badge {
+    font-size: 20px!important;
+  }
+  .card-image{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  label {
+    font-size: 20px!important;
+  }
+  #heroName{
+font-size: 20px;
+color:red;
+
+  }
+  h1{
+  padding-top: 20px;
+}
+  div{
+    font-size: 20px!important;
+  }
+
+  span#hero-name {
+    top: -4px;
+    position: relative;
+  }
+  .col .s6{
+max-width:50%!important;
+font-size:16px;
+  }
+  .col .s12{
+max-width:100%;
+font-size:16px;
+  }
+
+
+  .displayHero {
+    width: 235px;
+  }
+  .collection{
+    padding: 15px;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 1.56rem!important;
+    line-height: 110%;
+    margin: 0.78rem 0 1.424rem 0;
+}
+h1 {
+    font-size: 2.2rem!important;
+    line-height: 110%;
+    margin: 0.1rem 0 1.68rem 0;
+}
+h2 {
+    font-size: 1.56rem!important;
+    line-height: 110%;
+    margin: 0.1rem 0 1.68rem 0;
+}
+div{
+  padding:20px;
+}

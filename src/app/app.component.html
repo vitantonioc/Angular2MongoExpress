@@ -1,0 +1,47 @@
+
+
+<div class="col s12">
+
+<div class="container col s12">
+    <div class=" col s6 offset-s6" style="width: 250px;float:right">
+      <form>
+        <div class="input-field ">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons lupa">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  <div style="float:right;padding:15px;color:white;font-weight: bold;"><h2>Angular Fullstack</h2></div>
+    <div class="nav-wrapper">
+       <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <div class="background">
+       
+      </div>
+      <a href="#!user"> <img src="shared/img/MEAN.png" style="width: 180px;"></a>
+      <a href="#!name"><span class="white-text name">AngularFullstack</span></a>
+      <a href="#!email"><span class="white-text email">vitantonio@gmail.com</span></a>
+    </div></li>
+    <li><a class="waves-effect" routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><i class="material-icons">done</i>Home</a></li>
+    <li><a class="waves-effect" routerLink="/about"  routerLinkActive="active"><i class="material-icons">done</i>About</a></li>
+    <li><div class="divider"></div></li>
+    <li><a routerLink="/to-do" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="waves-effect"><i class="material-icons">done</i>To-Do</a></li>
+    <li><a class="waves-effect" routerLink="/heroes"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><i class="material-icons">done</i>Heroes</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    
+    </div>
+  </div>
+
+  
+       
+
+ 
+
+
+
+  <router-outlet></router-outlet>
+
+</div>

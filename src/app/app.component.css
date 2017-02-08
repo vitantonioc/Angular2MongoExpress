@@ -1,0 +1,49 @@
+.col{
+	margin-top: -15px;
+	background-color: #ec971f;
+	height: 55px;
+}
+.material-icons{
+	font-size: 34px;
+	color:white;
+	padding-top:8px;
+	margin-top: -8px;
+}
+
+nav .nav-wrapper {
+    padding: 7px ;
+    font-size: 20px;
+    text-decoration: none;
+}
+a{text-decoration: none}
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+	    border-bottom: 1px solid #ffffff;
+}
+#search{
+	font-size: 18px;
+}
+h2 {
+    font-size: 1.56rem!important;
+    line-height: 110%;
+    margin: 0.78rem 0 1.424rem 0;
+}
+h1 {
+    font-size: 2.2rem!important;
+    line-height: 110%;
+    margin: 0.1rem 0 1.68rem 0;
+}
+.material-icons {
+    font-size: 34px;
+    color: white;
+    padding-top: 8px;
+    margin-top: 12px;
+}
+@media only screen and (min-width: 993px){
+.container {
+    width: 90%;
+}
+}
+.lupa{
+	margin-top:0px;
+	font-size: 24px;
+}

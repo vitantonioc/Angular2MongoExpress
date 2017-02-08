@@ -1,0 +1,64 @@
+<div class="card" *ngIf="isLoadingTasks">
+  <h4 class="card-header">Loading...</h4>
+  <div class="card-block">
+    <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+  </div>
+</div>
+
+<app-toast [message]="toast.message"></app-toast>
+<div class="card" *ngIf="!isEditingTasks">
+ <div class="card-image">
+        <img src="http://lorempixel.com/1024/350/abstract/10">
+      </div>
+  <h4 class="card-header">Add new task</h4>
+  <div class="card-block">
+    <form class="form-inline" [formGroup]="addTaskForm" (ngSubmit)="addTask()" style="text-align:center">
+      <div class="form-group">
+          <input class="form-control" type="text" name="task" formControlName="task" placeholder="Add Task">
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="!addTaskForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
+    </form>
+  </div>
+</div>
+<div class="card" *ngIf="!isLoadingTasks">
+  <h4 class="card-header">Current tasks ({{tasks.length}})</h4>
+  <div class="card-block">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-default">
+        <tr>
+          <th>Task</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="tasks.length === 0">
+        <tr>
+          <td colspan="4">There are no tasks in the DB. Add a new task below.</td>
+        </tr>  
+      </tbody>
+      <tbody *ngIf="!isEditingTasks">
+        <tr *ngFor="let task of tasks">
+          <td>{{task.task}}</td>
+          <td>
+            <button class="btn btn-sm btn-warning" (click)="enableEditing(task)"><i class="fa fa-pencil"></i> Edit</button> 
+            <button class="btn btn-sm btn-danger" (click)="deleteTask(task)"><i class="fa fa-check"></i> Mark as done</button>
+          </td>
+        </tr>  
+      </tbody>
+      <tbody *ngIf="isEditingTasks">
+        <tr>
+          <td colspan="4">
+            <form class="form-inline" #form="ngForm" (ngSubmit)="editTask(task)" style="display:inline">
+              <div class="form-group">
+                  <input class="form-control" type="text" name="task" [(ngModel)]="task.task" placeholder="Task" required>
+              </div>
+              
+              <button class="btn btn-sm btn-primary" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
+            </form>
+            <button class="btn btn-sm btn-warning" (click)="cancelEditing()"><i class="fa fa-times"></i> Cancel</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
