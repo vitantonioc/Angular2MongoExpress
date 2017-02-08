@@ -8,7 +8,7 @@ Angular2 with Mongo, Express, Webpack and Gulp
 <pre>- npm start </pre>
 
 <h3>Website:</h3>
-<pre>- localhost:8080</pre>
+<pre>- localhost:8080 (if you want change port see script start into package.jon)</pre>
 
 <h3>Express</h3>
 <pre>- localhost:4200</pre>
