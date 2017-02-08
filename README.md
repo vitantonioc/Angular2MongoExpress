@@ -1,10 +1,19 @@
 # Angular2MongoExpress
-Angular2 with Mongo, Express, Webpack and Gulp
+Angular2 with Mongo, Express, Webpack and Gulp.
+
+<h3>Requirements:</h3>
+<pre>
+- Node 5.9+<br>
+- MongoDB<br>
+</pre>
 
 <h3>Install:</h3>
 <pre>- npm install</pre>
 
-<h3>Run:</h3>
+<h3>Run Mongo:</h3>
+<pre>- mongod </pre>
+
+<h3>Run Web and Express:</h3>
 <pre>- npm start </pre>
 
 <h3>Website:</h3>
