@@ -1,5 +1,5 @@
 # Angular2MongoExpressMaterialize
-Angular2 with Mongo, Express, Webpack and Gulp.
+Angular2 with Mongo, Express, Webpack with Cors
 
 <h3>Requirements:</h3>
 <pre>
