@@ -22,3 +22,5 @@ Angular2 with Mongo, Express, Webpack and Gulp.
 <h3>Express</h3>
 <pre>- localhost:4200</pre>
 
+![alt tag](https://github.com/vitantonioc/Angular2MongoExpress/blob/master/ng2.jpg)
+
